@@ -1,7 +1,7 @@
 'reach 0.1';
 'use strict';
 
-const deadline =  200;//默认
+const deadline =  300;//默认
 const Common = {
   ...hasRandom,
   showWinner: Fun([UInt], Null),//ticket # won

@@ -26,7 +26,7 @@ class App extends React.Component {
   async componentDidMount() {
 
     const now = await reach.getNetworkTime();
-    reach.setQueryLowerBound(reach.sub(now, 8000));
+    reach.setQueryLowerBound(reach.sub(now, 2000));
     const acc = await reach.getDefaultAccount();
     const balAtomic = await reach.balanceOf(acc);
     const bal = reach.formatCurrency(balAtomic, 4);
